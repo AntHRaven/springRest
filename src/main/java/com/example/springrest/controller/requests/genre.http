@@ -1,0 +1,25 @@
+###
+GET http://localhost:9090/api/genre
+
+###
+GET http://localhost:9090/api/genre/1
+
+###
+POST http://localhost:9090/api/genre
+Content-Type: application/json
+
+{
+  "title": "test"
+}
+
+###
+PUT http://localhost:9090/api/genre
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "test"
+}
+
+###
+DELETE http://localhost:9090/api/genre/1

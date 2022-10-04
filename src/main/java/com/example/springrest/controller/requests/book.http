@@ -1,0 +1,35 @@
+###
+GET http://localhost:9090/api/book
+
+###
+GET http://localhost:9090/api/book/1
+
+###
+POST http://localhost:9090/api/book
+Content-Type: application/json
+
+{
+  "title": "test",
+  "author":  {
+    "id": 1,
+    "title": "test2"
+  },
+  "genre": {
+    "id": 1,
+    "title": "test"
+  }
+}
+
+###
+PUT http://localhost:9090/api/book
+Content-Type: application/json
+
+{
+  "id": 1,
+  "title": "test",
+  "authorId": 1,
+  "genreId": 1
+}
+
+###
+DELETE http://localhost:9090/api/book/1

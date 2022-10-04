@@ -1,2 +1,9 @@
-package com.example.springrest.repository;public interface BookRepository {
+package com.example.springrest.repository;
+
+import com.example.springrest.model.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface BookRepository extends JpaRepository<Book, Long> {
 }

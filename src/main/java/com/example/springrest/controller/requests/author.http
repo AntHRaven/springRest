@@ -1,0 +1,25 @@
+###
+GET http://localhost:9090/api/author/list
+###
+GET http://localhost:9090/api/author/1
+###
+POST /api/author HTTP/1.1
+Host: localhost:9090
+Content-Type: application/json
+Content-Length: 24
+
+{
+  "name": "test"
+}
+###
+PUT http://localhost:9090/api/author
+Host: localhost:9090
+Content-Type: application/json
+Content-Length: 24
+
+{
+  "id": 1,
+  "name": "test2"
+}
+###
+DELETE http://localhost:9090/api/author/1
